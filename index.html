@@ -13,23 +13,28 @@
 
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-                <div class="form-group">
-                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                    <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-                </div>
-            </form>
-        </div>
-        <div class="row justify-content-center">
-            <div id="songs">
-
+        <div class="wrapper">
+            <div class="row justify-content-center">
+                <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                    <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                        <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                    </div>
+                </form>
             </div>
+            <div id="songs" class="row d-flex flex-wrap justify-content-center">
+            </div>
+        </div>
+        <div class="row">
+            <nav id="musicBar" class="navbar navbar-dark bg-primary fixed-bottom justify-content-center">
+
+            </nav>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>
+<button onclick=""></button>
 
 </html>
